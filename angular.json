@@ -11,7 +11,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist",
+            "outputPath": "dist/pk2-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
@@ -32,8 +32,7 @@
             "production": {
               "optimization": true,
               "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
+              "sourceMap": false,              
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -94,34 +93,14 @@
             ],
             "exclude": []
           }
-        }
-      }
-    },
-    "pk2-angular-e2e": {
-      "root": "e2e",
-      "sourceRoot": "e2e",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "pk2-angular:serve"
-          }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "e2e/tsconfig.e2e.json"
-            ],
-            "exclude": []
-          }
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
-    }
+    } 
   },
-  "defaultProject": "pk2-angular",
+  
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
