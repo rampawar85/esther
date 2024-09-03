@@ -2,15 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-
 import { ComponentsComponent } from './components/components.component';
 import { ProfileComponent } from './examples/profile/profile.component';
-import { SignupComponent } from './examples/signup/signup.component';
-import { LandingComponent } from './examples/landing/landing.component';
-import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.component';
 import { InternshipComponent } from './components/internship/internship.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { DatasecurityComponent } from './components/datasecurity/datasecurity.component';
 
 const routes: Routes =[
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -18,7 +15,7 @@ const routes: Routes =[
     { path: 'user-profile',     component: ProfileComponent },
     { path: 'aboutus',           component: AboutUsComponent },
     { path: 'contactus',  component: ContactUsComponent },
-    { path: 'nucleoicons',      component: NucleoiconsComponent },
+    { path: 'datasecurity',      component: DatasecurityComponent },
     { path: 'internship',      component: InternshipComponent }
 ];
 

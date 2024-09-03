@@ -17,6 +17,7 @@ import { NgbdModalContent } from './modal/modal.component';
 import { InternshipComponent } from './internship/internship.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { DatasecurityComponent } from './datasecurity/datasecurity.component';
 
 @NgModule({
     imports: [
@@ -38,7 +39,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
         NgbdModalContent,
         InternshipComponent,
         AboutUsComponent,
-        ContactUsComponent
+        ContactUsComponent,
+        DatasecurityComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]
